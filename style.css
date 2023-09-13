@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.heading{
+    position: absolute;
+    top:5px;
+    left: 560px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 3rem;
+}
+/* .sidebar {
+    width: 0;
+    height: 100%;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+} */
+
+
+/* ... Previous CSS code ... */
+.sidebar {
+    /* ... Previous styles ... */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000e4;
+}
+.search-bar{
+    width:30%;
+    position: absolute;
+    left: 658px;
+    bottom:30px;
+    padding:10px;
+    border-radius: 15px;
+    border:0.5px solid black;
+    text-align: center;
+}
+.user-profile {
+    /* text-align: center; */
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top:30px;
+    
+}
+.user-name{
+    text-decoration: underline;
+
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    /* gap:1px; */
+    line-height: 1px;
+}
+
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ... Rest of the CSS code ... */
+
+
+/* ... Rest of the CSS code ... */
+
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    transition: 0.5s;
+    padding: 20px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top:50px; */
+    /* margin-bottom:10px; */
+    height: 100%;
+}
+
+/* .mic-icon {
+    width: 100px;
+    height: 100px;
+    border:0.5px solid black;
+    border-radius: 50%;
+    background-color: black;
+} */
+
+.mic-icon {
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 40px;
+    cursor: pointer;
+    animation: pulse 2s infinite; /* Apply the pulsating animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Scale up to 1.2x size */
+        opacity: 0.7; /* Reduce opacity while scaling */
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1; /* Restore opacity */
+    }
+}
+
+.button-icon{
+    border-style:none ;
+    background-color: #fff;
+}
+button#toggleSidebar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button#toggleSidebar:hover {
+    background-color: #555;
+}
+
